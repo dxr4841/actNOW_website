@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ActnowApp</title>
+  <link href='https://www.google.com/fonts/specimen/Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://bootswatch.com/journal/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class = "container">
+   <%= yield %>
+  </div>
+</body>
+</html>
