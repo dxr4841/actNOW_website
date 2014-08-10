@@ -1,0 +1,48 @@
+<div class="page-header">
+  <h1>Signatures</h1>
+</div>
+
+<p><a href="/signatures/new" class="btn btn-primary">Add a New Signature</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Phone number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @signatures.each do |signature| %>
+      <tr>
+        <td><%= signature.first_name %></td>
+        <td><%= signature.last_name %></td>
+        <td><%= signature.city %></td>
+        <td><%= signature.country %></td>
+        <td><%= signature.phone_number %></td>
+        <td>
+          <a href="/signatures/<%= signature.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/signatures/<%= signature.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_signature/<%= signature.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

@@ -1,0 +1,90 @@
+<div class="page-header">
+  <h1>Add Petition</h1>
+</div>
+
+<% if @petition.errors.any? %>
+  <% @petition.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+
+<form action="signatures/new" class="form-horizontal">
+  <!-- Label and input for video_url -->
+  <div class="form-group">
+    <label for="video_url" class="col-sm-2 control-label">
+      Documentary link
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="video_url" name="video_url" placeholder="Documentary link" class="form-control" value="<%= @petition.video_url %>">
+    </div>
+  </div>
+
+  <!-- Label and input for title -->
+  <!-- <div class="form-group">
+    <label for="title" class="col-sm-2 control-label">
+      Title
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="title" name="title" placeholder="Title" class="form-control" value="<%= @petition.title %>">
+    </div>
+  </div>
+ -->
+  <div class="form-group">
+    <label for="title" class="col-sm-2 control-label">
+      Title
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="title" name="title" placeholder="Title" class="form-control" value="<%= @petition.title %>">
+    </div>
+  </div>
+
+  <!-- Label and input for addressee -->
+  <div class="form-group">
+    <label for="addressee" class="col-sm-2 control-label">
+      Addressee
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="addressee" name="addressee" placeholder="Addressee" class="form-control" value="<%= @petition.addressee %>">
+    </div>
+  </div>
+
+  <!-- Label and input for author -->
+  <div class="form-group">
+    <label for="author" class="col-sm-2 control-label">
+      Author
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="author" name="author" placeholder="Author" class="form-control" value="<%= @petition.author %>">
+    </div>
+  </div>
+
+  <!-- Label and input for petition_summary -->
+  <div class="form-group">
+    <label for="petition_summary" class="col-sm-2 control-label">
+      Petition summary
+    </label>
+    <div class="col-sm-10">
+      <textarea id="petition_summary" name="petition_summary" placeholder="Petition summary" class="form-control" rows="3"><%= @petition.petition_summary %></textarea>
+    </div>
+  </div>
+
+  <!-- Label and input for petition_description -->
+  <div class="form-group">
+    <label for="petition_description" class="col-sm-2 control-label">
+      Petition description
+    </label>
+    <div class="col-sm-10">
+      <textarea id="petition_description" name="petition_description" placeholder="Petition description" class="form-control" rows="3"><%= @petition.petition_description %></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" value="Create Petition" class="btn btn-primary">
+    </div>
+  </div>
+</form>

@@ -1,0 +1,48 @@
+<div class="page-header">
+  <h1>Petitions</h1>
+</div>
+
+<p><a href="/petitions/new" class="btn btn-primary">Add a New Petition</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Addressee</th>
+      <th>Author</th>
+      <th>Petition summary</th>
+      <th>Petition description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @petitions.each do |petition| %>
+      <tr>
+        <td><%= petition.title %></td>
+        <td><%= petition.addressee %></td>
+        <td><%= petition.author %></td>
+        <td><%= petition.petition_summary %></td>
+        <td><%= petition.petition_description %></td>
+        <td>
+          <a href="/petitions/<%= petition.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/petitions/<%= petition.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_petition/<%= petition.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

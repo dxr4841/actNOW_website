@@ -2,16 +2,62 @@
 <html>
 <head>
   <title>ActnowApp</title>
-  <link href='https://www.google.com/fonts/specimen/Roboto+Slab' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="http://bootswatch.com/journal/bootstrap.css">
+  <!--<link rel="stylesheet" type="text/css" href="http://bootswatch.com/journal/bootstrap.css">-->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class = "container">
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<header class='dissapearing-header'>
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div>
+            <div class="tagline">
+              <%=image_tag(image_path("actNOW-Logo.png"), class: 'navbar-left', style: "max-width:250px; margin-top: -7px;") %>
+              <h1><p><b>&nbsp Corruption ends where action begins</h1></p> </b>
+            </div>
+            <div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="/">&nbsp Home</a>
+                    </li>
+                    <li>
+                        <a href="/how_it_works">How It Works</a>
+                    </li>
+                    <li>
+                        <a href="/about_us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/latest_investigations">Latest Investigations</a>
+                    </li>
+                    <li>
+                        <a href="/contact_us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+<br/>
+<br/>
    <%= yield %>
   </div>
 </body>
 </html>
+

@@ -1,0 +1,51 @@
+<h2>Latest News</h2>
+<hr />
+<h3>Soul Takers 1: Driver and Vehicle Licensing Authority (DVLA) Rots</h3>
+
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+          <iframe class="col-md-12" width="200" height="500" src="//www.youtube.com/embed/dQe2oSq2rLg" frameborder="" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6">
+          <h3><%= @petition.title %></h3>
+          <dl class="dl-horizontal">
+          <!-- <dt>Title</dt>
+          <dd><%= @petition.title %></dd> -->
+          <br/>
+          <dt>Addressee</dt>
+          <dd><%= @petition.addressee %></dd>
+          <br/>
+          <dt>Author</dt>
+          <dd><%= @petition.author %></dd>
+          <br/>
+          <dt>Petition summary</dt>
+          <dd><%= @petition.petition_summary %></dd>
+          <br/>
+          <h2 class= "text-center">Click to read more and sign!</h2>
+          <div class="form-group"
+          <form action="/latest-investigations">
+          <input type="submit" href="/latest-investigations" id="img-btn"class="btn btn-color center-block">
+          </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+<%= link_to '/latest-investigations', controller: 'signatures' %>
+
+
+  <!-- <dt>Petition description</dt>
+  <dd><%= @petition.petition_description %></dd> -->
+</dl>
+</div>
+
+<!-- <div class="form-group">
+    <div class="col-sm-offset-6 col-sm-6">
+      <input type="submit" value="actNOW" class="btn btn-color">
+    </div>
+  </div>
+</form>
+</div> -->
+
