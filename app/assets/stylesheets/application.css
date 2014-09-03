@@ -6281,7 +6281,8 @@ input[type=submit] {
 }
 
 .about-us {
-  width: 70%;
+  width: 55%;
+  margin-left: 10%;
   display: inline-block;
 }
 
@@ -6294,6 +6295,7 @@ input[type=submit] {
 .about-us-content p {
   font-size: 16px;
   padding: 10px;
+  text-align: justify;
 }
 
 .home-headline {
@@ -6349,4 +6351,12 @@ input[type=submit] {
 
 .anas-and-da-youth-pic {
   width: 750px;
+}
+
+.pooa {
+  margin-top: 50px;
+}
+
+.pooa h2 {
+  margin-bottom: 30px;
 }
