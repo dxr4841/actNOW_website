@@ -6280,8 +6280,9 @@ input[type=submit] {
   width: 335px;
 }
 
-.about-us-banner {
-  width: 75%;
+.about-us {
+  width: 70%;
+  display: inline-block;
 }
 
 .about-us-content h2 {
@@ -6304,4 +6305,48 @@ input[type=submit] {
   margin: 0 auto;
   width: 77%;
   font-size: 28px;
+}
+
+.about-us-aside {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  background-color: #E6E6E6;
+  width: 30%;
+  text-align: center;
+}
+
+.aside-header {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-top: 10px solid #24c1e4;
+  font-family: Palatino Linotype;
+  font-size: 24px;
+  color: #ee522f;
+  text-align: center;
+}
+
+.about-us-aside {
+  font-size: 20px;
+}
+
+.big-burnt {
+  font-size: 64px;
+  color: #ee522f;
+  text-align: center;
+  font-weight: 400;
+}
+
+.get-involved {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.anas-and-da-youth {
+  padding: 20px;
+}
+
+.anas-and-da-youth-pic {
+  width: 750px;
 }
