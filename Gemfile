@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+group :production do
+  gem 'pg'
+end
+# Use sqlite3 as the database for Active Record
+group :development do
+  gem 'sqlite3'
+end
+
 gem 'starter_generators', :git => "git://github.com/rbetina/starter_generators.git", :branch => "kiei925"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

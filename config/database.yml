@@ -23,3 +23,16 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: blog_development
+  pool: 5
+  username: blog
+  password:
+# development:
+#   adapter: postgresql
+#   host: localhost
+#   username: user
+#   database: app-dev
