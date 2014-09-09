@@ -1,4 +1,16 @@
 source 'https://rubygems.org'
+ruby "2.1.2"
+gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails'
+gem 'twilio-ruby'
+gem 'dotenv-rails'
+gem 'sinatra'
+
+gem 'jquery-ui-rails'
+
+gem 'starter_generators', :git => "git://github.com/rbetina/starter_generators.git", :branch => "kiei925"
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.1.4'
 
 group :production do
   gem 'pg'
@@ -7,11 +19,6 @@ end
 group :development do
   gem 'sqlite3'
 end
-
-gem 'starter_generators', :git => "git://github.com/rbetina/starter_generators.git", :branch => "kiei925"
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
